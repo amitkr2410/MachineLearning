@@ -3,14 +3,17 @@
 ### Regression models: 
 ### (1) MultiProjectRegressionModel 
     In this project, we do exploratry study of the data \
-    Things to check are shape/size of data, nulls for missing values, types of coloumns \
+    Things to check: shape/size of data, nulls for missing values, types of coloumns \
     Use sci-kit library's SimpleImputer and OneHotEncoder to do preprocessing of the data \
     Perform analysis to look for a trend in the data \
     Build Linear or polynomial regression model on the training data
     
 ### (2) TitanicData_DecisionTree_RandomForest 
-     We apply statistical model: Decision trees, Random Forest method, Logistic Regression model, Support vector classifier (SVC)
-     and xGBoost classifier to study feature and corrleations present in the titanic shipwreck data. We compute the confusion matrix to determine the validity of the model 
+     We apply statistical model: Decision trees, Random Forest method,
+     Logistic Regression model, Support vector classifier (SVC)
+     and xGBoost classifier to study feature and corrleations present 
+     in the titanic shipwreck data. We compute the confusion matrix to 
+     determine the validity of the model 
 ### (3) Support vector Machine- SVM 
     Introduction to SVM (Supervised machine learning technique) \
     Useful for classification, Regression, Outlier/Anomaly detection \
