@@ -9,9 +9,13 @@
     Build Linear or polynomial regression model on the training data
     
 ### (2) TitanicData_DecisionTree_RandomForest 
-     We apply statistical model: Decision trees, Random Forest method,
-     Logistic Regression model, Support vector classifier (SVC)
-     and xGBoost classifier to study feature and corrleations present 
+     We apply statistical models: 
+     (a) Decision trees
+     (b) Random Forest method
+     (c) Logistic Regression model
+     (d) Support vector classifier (SVC)
+     (e) xGBoost classifier 
+     to study feature and corrleations present 
      in the titanic shipwreck data. We compute the confusion matrix to 
      determine the validity of the model 
 ### (3) Support vector Machine- SVM 
