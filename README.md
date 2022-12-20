@@ -1,7 +1,7 @@
 #Here, we apply statistical methods to understand features/correlations present in the data
 
-Regression models: \
-(1) MultiProjectRegressionModel \
+## Regression models: \
+## (1) MultiProjectRegressionModel \
     In this project, we do exploratry study of the data \
     Things to check are shape/size of data, nulls for missing values, types of coloumns \
     Use sci-kit library's SimpleImputer and OneHotEncoder to do preprocessing of the data \
