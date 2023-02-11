@@ -22,12 +22,13 @@
      (a) Decision trees
      (b) Random Forest method
      (c) Logistic Regression model
-     (d) Support vector classifier (SVC)
-     (e) KNeighbors Classifier  
-     (f) xGBoost classifier 
+     (d) Support vector regression (SVR)
+     (e) KNeighbors regression
+     (f) xGBoost regression
      to study feature and corrleations present 
-     in the Customer chrun data at a Bank. We compute the confusion matrix to 
-     determine the performance of the machine learning model.
+     in the Customer chrun data at a Bank. We convert the predicted probabilities into
+     binary group and compute the confusion matrix to determine the performance
+     of the machine learning model.
      
 ### (4) TitanicData_DecisionTree_RandomForest 
      We apply statistical models: 
