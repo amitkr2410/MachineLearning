@@ -1,5 +1,5 @@
 #Our goal is to apply deep learning convolutional neural network \
-alogirthm and build a model that allows us to classify brain tumor \
+algorithm and build a model that allows us to classify brain tumor \
 CT scanned images into healthy or tumorous sample.
 
 #We use keras library and train the model using Sequential method. \
