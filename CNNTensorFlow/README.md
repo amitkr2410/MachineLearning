@@ -3,7 +3,7 @@
 We use keras library and train the model using Sequential method. \
 The original images of brain are converted into a matrix data using function "ImageDataGenerator" defined in keras library.
 
-###(1) Using custom build CNN architecture 
+### (1) Using custom build CNN architecture 
        To view this project click on "main_cnn.ipynb"
     
 ### (2) Using ResNet50 CNN architecture
