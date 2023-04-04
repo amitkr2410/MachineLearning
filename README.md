@@ -33,8 +33,23 @@
      binary group and compute the confusion matrix to determine the performance
      of the machine learning model.
      To view the project click on "CustomerChurn.ipynb"
+
+### (4) NLP_DetectSpamEmail text data
+     We apply Natural Language Processing (NLP) techniques to classify a text message 
+     as a spam or good email (ham) using Python. The text preprocessing is done using 
+     "stopwords" from NLTK corpus library and then, "CountVectorizer" function is used 
+     to construct a 2d-matrix from the text messages. The 2d-matrix is used to build the model
+     for the following different cases: 
+     (a) Decision trees
+     (b) Random Forest method
+     (c) Logistic Regression model
+     (d) Support vector classification (SVC)
+     (e) xGBoost classifier
+     We  compute the confusion matrix to determine the performance
+     of the machine learning model.
+     To view the project click on "NLP_DetectSpamEmail.ipynb"
      
-### (4) TitanicData_DecisionTree_RandomForest 
+### (5) TitanicData_DecisionTree_RandomForest 
      We apply statistical models: 
      (a) Decision trees
      (b) Random Forest method
@@ -46,7 +61,7 @@
      determine the validity of the model.
      To view the project click on "Titanic_DecisionTree_RandomForest.ipynb"
      
-### (5) MultiProjectRegressionModel 
+### (6) MultiProjectRegressionModel 
     In this project, we do exploratry study of the data 
     Things to check: shape/size of data, nulls for missing values, types of coloumns 
     Use sci-kit library's SimpleImputer and OneHotEncoder to do preprocessing of the data 
@@ -55,7 +70,7 @@
     To view the project click on "Project0_KaggleProject_ExploreData.ipynb"
     or "Project1_PreprocessingAndRegression.ipynb" or "Project2_RegressionLinearPoly.ipynb"
     
-### (6) WebScrappingBS4  
+### (7) WebScrappingBS4  
      We use python library called "BeautifulSoup" to do webscrapping. 
      In the end we use seaborn library to make a bar graph.
      To view the project click on "WebScrappingBS4.ipynb"
