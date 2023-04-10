@@ -34,7 +34,19 @@
      of the machine learning model.
      To view the project click on "CustomerChurn.ipynb"
 
-### (4) NLP_DetectSpamEmail text data
+### (4) NLP_automation_resume for HR management
+     Natural language processing to classify a resume into a job category
+     Read reasumes in pdf format using pdf2image ocr tool and convert it to
+     PIL image, then use pytesseract.image_to_string to convert the image into strings objects.
+     Then, use natural language processing tools such as nltk stopwords, regex, string replace
+     to get important words from the string.
+     We also remove prefix and suffix using PorterStemmer in nltk library.
+     Then, we use CountVectorizer method and TfidfVectorizer method from sci-kit learn
+     to create a independent feature vector.
+     We use explore NaiveBayes model to train the data set. Compute confusion matrix.
+     To view the project click on "Scrapping_resume.ipynb" and "NLP_modeling.ipynb"
+     
+### (5) NLP_DetectSpamEmail text data
      We apply Natural Language Processing (NLP) techniques to classify a text message 
      as a spam or good email (ham) using Python. The text preprocessing is done using 
      "stopwords" from NLTK corpus library and then, "CountVectorizer" function is used 
@@ -49,7 +61,7 @@
      of the machine learning model.
      To view the project click on "NLP_DetectSpamEmail.ipynb"
      
-### (5) TitanicData_DecisionTree_RandomForest 
+### (6) TitanicData_DecisionTree_RandomForest 
      We apply statistical models: 
      (a) Decision trees
      (b) Random Forest method
@@ -61,7 +73,7 @@
      determine the validity of the model.
      To view the project click on "Titanic_DecisionTree_RandomForest.ipynb"
      
-### (6) MultiProjectRegressionModel 
+### (7) MultiProjectRegressionModel 
     In this project, we do exploratry study of the data 
     Things to check: shape/size of data, nulls for missing values, types of coloumns 
     Use sci-kit library's SimpleImputer and OneHotEncoder to do preprocessing of the data 
@@ -70,7 +82,7 @@
     To view the project click on "Project0_KaggleProject_ExploreData.ipynb"
     or "Project1_PreprocessingAndRegression.ipynb" or "Project2_RegressionLinearPoly.ipynb"
     
-### (7) WebScrappingBS4  
+### (8) WebScrappingBS4  
      We use python library called "BeautifulSoup" to do webscrapping. 
      In the end we use seaborn library to make a bar graph.
      To view the project click on "WebScrappingBS4.ipynb"
