@@ -8,8 +8,8 @@ The final project deployed on AWS server can be accessed via the following link:
 For more information also visit: 
 https://github.com/amitkr2410/MachineLearning-Deployment
 
-### For Machine learning experimentation, we build DVC piplines. 
-### In below, we present a typical ML architecture, a layout of DVC piplines and ML experimentation for prototyping a model.
+### For Machine learning experimentation, we build DVC pipelines. 
+### In below, we present a typical ML architecture, a layout of DVC pipelines and ML experimentation for prototyping a model.
 ![alt text](Diagrams-ML-Stages_Merged.png)
 
 ### Numerical regression and classification models explored are: 

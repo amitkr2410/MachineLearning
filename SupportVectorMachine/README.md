@@ -31,6 +31,6 @@ Steps to model the data file "cell_samples_for_svm.csv":
 For more information also visit: 
 https://github.com/amitkr2410/MachineLearning-Deployment
 
-### For Machine learning experimentation, we build DVC piplines. 
+### For Machine learning experimentation, we build DVC pipelines. 
 ### In below, we present the ML architecture and stages involved in this project:
 ![alt text](SVC_CancerCellData_MLArchitecture.png)
