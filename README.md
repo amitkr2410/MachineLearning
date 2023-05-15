@@ -1,12 +1,12 @@
 ### Here, we apply Machine learning algorithms to understand features/correlations present in the data and build end-to-end application:
 
-    The projects can be viewed by clicking on the file with extension "*.ipynb" (JupyterNotebook). 
+The projects can be viewed by clicking on the file with extension "*.ipynb" (JupyterNotebook). 
 
-    The final project deployed on AWS server can be accessed via the following link:
-    [AWS Web APP Machine Learning](https://uw44cshh4a23jlvucfhjbyllye0lvsfb.lambda-url.us-east-1.on.aws)
-    
-    For more information also visit: 
-    https://github.com/amitkr2410/MachineLearning-Deployment
+The final project deployed on AWS server can be accessed via the following link:
+[AWS Web APP Machine Learning](https://uw44cshh4a23jlvucfhjbyllye0lvsfb.lambda-url.us-east-1.on.aws)
+
+For more information also visit: 
+https://github.com/amitkr2410/MachineLearning-Deployment
 
 ### For Machine learning experimentation, we build DVC piplines. 
 ### In below, we present a typical ML architecture, a layout of DVC piplines and ML experimentation for prototyping a model.
