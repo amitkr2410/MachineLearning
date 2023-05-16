@@ -14,14 +14,20 @@ https://github.com/amitkr2410/MachineLearning-Deployment
 
 ### Numerical regression and classification models explored are:
 ### (1) NLP_Sentiment_twitter text data
-     We apply Natural Language Processing (NLP) techniques to classify the sentiment of the text message as positive, neutral, or negative using Python. The text preprocessing is done using "stopwords" and "PorterStemmer"from NLTK corpus library and then, "CountVectorizer" function is used to construct a 2d-matrix from the text messages. The 2d-matrix is used to build the model for the following different cases: 
+     We apply Natural Language Processing (NLP) techniques to classify the sentiment
+     of the text message as positive, neutral, or negative using Python. The text
+     preprocessing is done using "stopwords" and "PorterStemmer"from NLTK corpus 
+     library and then, "CountVectorizer" function is used to construct a 2d-matrix 
+     from the text messages. The 2d-matrix is used to build the model for the 
+     following different cases: 
      (a) Decision trees
      (b) Random Forest method
      (c) Logistic Regression model
      (d) Support vector classification (SVC)
      (e) xGBoost classifier
      (f) Naive Bayes
-     We  compute the accuracy, precision, f1-score (confusion matrix) to determine the performance of the machine learning model.
+     We  compute the accuracy, precision, f1-score (confusion matrix) to determine the 
+     performance of the machine learning model.
      To view the project click on "NLP_Sentiment.ipynb"
 
 ### (2) CNNTensorFlow- Deep learning 
@@ -31,7 +37,8 @@ https://github.com/amitkr2410/MachineLearning-Deployment
     The original images of brain are converted into a matrix data using
     function "ImageDataGenerator" defined in keras library. 
     We study the accuracy at each epoch of the model training. In the end, 
-    we test the model againt known data and compute precision score and confusion matrix to determine the validity of the model.
+    we test the model againt known data and compute precision score and confusion 
+    matrix to determine the validity of the model.
     To view the project click on "main_cnn.ipynb" or "main_cnn_resnet50.ipynb" 
     
 ### (3) Support vector Machine- SVM 
@@ -58,9 +65,11 @@ https://github.com/amitkr2410/MachineLearning-Deployment
 ### (5) NLP_automation_resume for HR management
      Natural language processing to classify a resume into a job category
      Read reasumes in pdf format using pdf2image ocr tool and convert it to
-     PIL image, then use pytesseract.image_to_string to convert the image into strings objects. For webscrapping, we used BeautifulSoup and Selenium driver.
+     PIL image, then use pytesseract.image_to_string to convert the image into strings 
+     objects. For webscrapping, we used BeautifulSoup and Selenium driver.
 
-     Next, we use natural language processing tools such as NLTK stopwords, regex, string replace to get important words from the string.
+     Next, we use natural language processing tools such as NLTK stopwords, regex, 
+     string replace to get important words from the string.
      We also remove prefix and suffix using PorterStemmer in NLTK library.
      Then, we use CountVectorizer method and TfidfVectorizer method from sci-kit learn
      to create a independent feature vector.
@@ -71,7 +80,8 @@ https://github.com/amitkr2410/MachineLearning-Deployment
      We apply Natural Language Processing (NLP) techniques to classify a text message 
      as a spam or good email (ham) using Python. The text preprocessing is done using 
      "stopwords" from NLTK corpus library and then, "CountVectorizer" function is used 
-     to construct a 2d-matrix from the text messages. The 2d-matrix is used to build the model
+     to construct a 2d-matrix from the text messages. The 2d-matrix is used to build 
+     the model
      for the following different cases: 
      (a) Decision trees
      (b) Random Forest method
@@ -97,7 +107,8 @@ https://github.com/amitkr2410/MachineLearning-Deployment
 ### (8) MultiProjectRegressionModel 
     In this project, we do exploratry study of the data 
     Things to check: shape/size of data, nulls for missing values, types of coloumns 
-    Use sci-kit library's SimpleImputer and OneHotEncoder to do preprocessing of the data 
+    Use sci-kit library's SimpleImputer and OneHotEncoder to do preprocessing of the 
+    data 
     Perform analysis to look for a trend in the data 
     Build Linear or polynomial regression model on the training data
     To view the project click on "Project0_KaggleProject_ExploreData.ipynb"
