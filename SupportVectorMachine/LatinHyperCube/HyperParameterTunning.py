@@ -2,13 +2,12 @@ import numpy as np
 import pandas as pd
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-from matplotlib.backends.backend_pdf import PdfPages
 import preprocess as preproc
 import LatinHyperCubeSampling as lhs
 import train as tr
 import evaluation as eval
 import os
-mpl.rcParams['savefig.format'] = "pdf"
+mpl.rcParams['savefig.format'] = "png"
 
 column=['all', 'independent']
 filename = "../cell_samples_for_svm.csv"
@@ -80,7 +79,7 @@ ax.axis('off')
 the_table = ax.table(cellText=df_tune.values, colLabels=df_tune.columns, loc='center')
 plt.tight_layout()
 
-OutputFilename='ExplorationTable.pdf'    
+OutputFilename='ExplorationTable.png'    
 plt.savefig(OutputFilename)
 Command="open " + " "+OutputFilename
 os.system(Command)

@@ -7,7 +7,7 @@ import pickle, os
 import seaborn as sb
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
-mpl.rcParams['savefig.format'] = "pdf"
+mpl.rcParams['savefig.format'] = "png"
 
 def ProcessDataFrame(dfname, column='all'):
     #df = pd.read_csv('cell_samples_for_svm.csv')
@@ -55,7 +55,7 @@ def ProcessDataFrame(dfname, column='all'):
         sb.heatmap( Pearson_matrix, cmap="PiYG",vmin=-1, vmax=1, annot=True, fmt=".1f")
         plt.tight_layout()
 
-        OutputFilename='PearsonMatrix_' + column +'.pdf'
+        OutputFilename='PearsonMatrix_' + column +'.png'
         plt.savefig(OutputFilename)
         Command="open " + " "+OutputFilename
         os.system(Command)
@@ -91,7 +91,7 @@ def ProcessDataFrame(dfname, column='all'):
                     axs[i,j].set(xticklabels=[])
                     
         plt.tight_layout()
-        OutputFilename='Correlations_' + column +'.pdf'
+        OutputFilename='Correlations_' + column +'.png'
         plt.savefig(OutputFilename)
         Command="open " + " "+OutputFilename
         os.system(Command)

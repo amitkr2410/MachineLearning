@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt #
 import os
-mpl.rcParams['savefig.format'] = "pdf"
+mpl.rcParams['savefig.format'] = "png"
 
 def DesignPoint(column):
     #LogGamma, C [Linear, RBF, Sigmoid]
@@ -19,7 +19,7 @@ def DesignPoint(column):
     plt.ylabel('C (Hyperparameter)')
     plt.xlabel('gamma (Hyperparameter)')
     plt.tight_layout()
-    OutputFilename='DesignPoints_' + column +'.pdf'
+    OutputFilename='DesignPoints_' + column +'.png'
     plt.savefig(OutputFilename)
     Command="open " + " "+OutputFilename
     os.system(Command)

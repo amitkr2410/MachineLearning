@@ -37,10 +37,10 @@ https://github.com/amitkr2410/MachineLearning-Deployment
 
 
 ### Hyperparameters exploration is presented below:
-![alt text](LatinHyperCube/ExplorationTable.pdf)
+![alt text](LatinHyperCube/ExplorationTable.png)
 
 ### Correlation matrix is presented below:
-![alt text](LatinHyperCube/PearsonMatrix_all.pdf)
+![alt text](LatinHyperCube/PearsonMatrix_all.png)
 
 ### Evaluation of the best model on unseen test data
-![alt text](LatinHyperCube/ConfusionMatrix.pdf)
+![alt text](LatinHyperCube/ConfusionMatrix.png)

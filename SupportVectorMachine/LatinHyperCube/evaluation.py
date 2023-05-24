@@ -4,7 +4,7 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
 import os
-mpl.rcParams['savefig.format'] = "pdf"
+mpl.rcParams['savefig.format'] = "png"
 
 def Eval(KernelName, Parameters, X_train, X_test, y_train, y_test):
     Gamma, c0 = Parameters
@@ -49,7 +49,7 @@ def plot_confusion_matrix(cnf_mat, LabelS, cmap=plt.cm.Blues):
             plt.text(j,i,cnf_mat[i][j])
 
     plt.tight_layout()
-    OutputFilename='ConfusionMatrix.pdf'
+    OutputFilename='ConfusionMatrix.png'
     plt.savefig(OutputFilename)
     Command="open " + " "+OutputFilename
     os.system(Command)
