@@ -34,3 +34,13 @@ https://github.com/amitkr2410/MachineLearning-Deployment
 ### For Machine learning experimentation, we build DVC pipelines. 
 ### In below, we present the ML architecture and stages involved in this project:
 ![alt text](SVC_CancerCellData_MLArchitecture.png)
+
+
+### Hyperparameters exploration is presented below:
+![alt text](LatinHyperCube/ExplorationTable.pdf)
+
+### Correlation matrix is presented below:
+![alt text](LatinHyperCube/PearsonMatrix_all.pdf)
+
+### Evaluation of the best model on unseen test data
+![alt text](LatinHyperCube/ConfusionMatrix.pdf)
