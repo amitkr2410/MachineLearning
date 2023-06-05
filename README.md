@@ -1,16 +1,18 @@
-### Here, we apply Machine learning algorithms to understand features/correlations present in the data and build end-to-end application:
+### Here, we apply Machine learning algorithms to build predictive model and build end-to-end application:
 
-The projects can be viewed by clicking on the file with extension "*.ipynb" (JupyterNotebook). 
-
-### The final project deployed on AWS server can be accessed via the following link:
+### The final project deployed on AWS server can be accessed via the following link (may take 2 mins to load website):
 [AWS Web APP Machine Learning](https://uw44cshh4a23jlvucfhjbyllye0lvsfb.lambda-url.us-east-1.on.aws)
+## The full website outlining projects can be accessed here (may take 2 mins to load website):
+[Amit's Personal HomePage](https://tfzfmiug4if622cp6ml7dlqt2e0njauz.lambda-url.us-east-1.on.aws/)
 
-For more information also visit: 
+For more information on deploying app on AWS using Flask, docker and Lambda function visit: 
 https://github.com/amitkr2410/MachineLearning-Deployment
 
 ### For Machine learning experimentation, we build DVC pipelines. 
 ### In below, we present a typical ML architecture, a layout of DVC pipelines and ML experimentation for prototyping a model.
 ![alt text](Diagrams-ML-Stages_Merged.png)
+
+The projects can be viewed by clicking on the file with extension "*.ipynb" (JupyterNotebook). 
 
 ### Numerical regression and classification models explored are:
 ### (1) NLP_Sentiment_twitter text data
