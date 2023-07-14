@@ -15,24 +15,7 @@ https://github.com/amitkr2410/MachineLearning-Deployment
 The projects can be viewed by clicking on the file with extension "*.ipynb" (JupyterNotebook). 
 
 ### Numerical regression and classification models explored are:
-### (1) NLP_Sentiment_twitter text data
-     We apply Natural Language Processing (NLP) techniques to classify the sentiment
-     of the text message as positive, neutral, or negative using Python. The text
-     preprocessing is done using "stopwords" and "PorterStemmer"from NLTK corpus 
-     library and then, "CountVectorizer" function is used to construct a 2d-matrix 
-     from the text messages. The 2d-matrix is used to build the model for the 
-     following different cases: 
-     (a) Decision trees
-     (b) Random Forest method
-     (c) Logistic Regression model
-     (d) Support vector classification (SVC)
-     (e) xGBoost classifier
-     (f) Naive Bayes
-     We  compute the accuracy, precision, f1-score (confusion matrix) to determine the 
-     performance of the machine learning model.
-     To view the project click on "NLP_Sentiment.ipynb"
-
-### (2) CNNTensorFlow- Deep learning 
+### (1) CNNTensorFlow- Deep learning 
     Classify brain tumor 2D scanned images into tumorus or healthy 
     sample using Convolutional neural network.
     We use keras library and train the model using 'Sequential method'. 
@@ -43,26 +26,22 @@ The projects can be viewed by clicking on the file with extension "*.ipynb" (Jup
     matrix to determine the validity of the model.
     To view the project click on "main_cnn.ipynb" or "main_cnn_resnet50.ipynb" 
     
-### (3) Support vector Machine- SVM 
+### (2) Support vector Machine- SVM - Cancer cell data
     Introduction to SVM (Supervised machine learning technique) 
     Useful for classification, Regression, Outlier/Anomaly detection 
     Relevant Library to Import 
     Modeling Cancer data to predict whether a cell sample is benign or malignant.
     To view the project click on "main_svm.ipynb"
-    
-### (4) BankCreditCardChurn data
-     We apply statistical models: 
-     (a) Decision trees
-     (b) Random Forest method
-     (c) Logistic Regression model
-     (d) Support vector regression (SVR)
-     (e) KNeighbors regression
-     (f) xGBoost regression
-     to study feature and corrleations present 
-     in the Customer chrun data at a Bank. We convert the predicted probabilities into
-     binary group and compute the confusion matrix to determine the performance
-     of the machine learning model.
-     To view the project click on "CustomerChurn.ipynb"
+
+### (3) BERT based model: fine-tunning for Q/A
+     In this project, we explore how to fine-tune ROBERTa transformer model.
+     We fine tune on custom paragraphs for Q/A taks.
+     View projects "fine_tune_RoBERT.ipynb"  and "main.ipynb"
+
+### (4) Transformer_NLP Custom architecture
+     In this implementation, we use single-head self-attention layer with positional encoding and construct a custom transformer moodel. We train the model on sentimental analysis data where the task is to classify the sentiment of text
+     into positive, neutral and negative.
+     View project file "TransformerScratch.ipynb"
 
 ### (5) NLP_automation_resume for HR management
      Natural language processing to classify a resume into a job category
@@ -77,8 +56,38 @@ The projects can be viewed by clicking on the file with extension "*.ipynb" (Jup
      to create a independent feature vector.
      We use explore NaiveBayes model to train the data set. Compute confusion matrix.
      To view the project click on "Scrapping_resume.ipynb" and "NLP_modeling.ipynb"
-     
-### (6) NLP_DetectSpamEmail text data
+
+### (6) NLP_Sentiment_twitter text data
+     We apply Natural Language Processing (NLP) techniques to classify the sentiment
+     of the text message as positive, neutral, or negative using Python. The text
+     preprocessing is done using "stopwords" and "PorterStemmer"from NLTK corpus 
+     library and then, "CountVectorizer" function is used to construct a 2d-matrix 
+     from the text messages. The 2d-matrix is used to build the model for the 
+     following different cases: 
+     (a) Decision trees
+     (b) Random Forest method
+     (c) Logistic Regression model
+     (d) Support vector classification (SVC)
+     (e) xGBoost classifier
+     (f) Naive Bayes
+     We  compute the accuracy, precision, f1-score (confusion matrix) to determine the performance of the machine learning model.
+     To view the project click on "NLP_Sentiment.ipynb"
+
+### (7) BankCreditCardChurn data
+     We apply statistical models: 
+     (a) Decision trees
+     (b) Random Forest method
+     (c) Logistic Regression model
+     (d) Support vector regression (SVR)
+     (e) KNeighbors regression
+     (f) xGBoost regression
+     to study feature and corrleations present 
+     in the Customer chrun data at a Bank. We convert the predicted probabilities into
+     binary group and compute the confusion matrix to determine the performance
+     of the machine learning model.
+     To view the project click on "CustomerChurn.ipynb"
+
+### (8) NLP_DetectSpamEmail text data
      We apply Natural Language Processing (NLP) techniques to classify a text message 
      as a spam or good email (ham) using Python. The text preprocessing is done using 
      "stopwords" from NLTK corpus library and then, "CountVectorizer" function is used 
@@ -94,19 +103,7 @@ The projects can be viewed by clicking on the file with extension "*.ipynb" (Jup
      of the machine learning model.
      To view the project click on "NLP_DetectSpamEmail.ipynb"
      
-### (7) TitanicData_DecisionTree_RandomForest 
-     We apply statistical models: 
-     (a) Decision trees
-     (b) Random Forest method
-     (c) Logistic Regression model
-     (d) Support vector classifier (SVC)
-     (e) xGBoost classifier 
-     to study feature and corrleations present 
-     in the titanic shipwreck data. We compute the confusion matrix to 
-     determine the validity of the model.
-     To view the project click on "Titanic_DecisionTree_RandomForest.ipynb"
-     
-### (8) MultiProjectRegressionModel 
+### (9) MultiProjectRegressionModel 
     In this project, we do exploratry study of the data 
     Things to check: shape/size of data, nulls for missing values, types of coloumns 
     Use sci-kit library's SimpleImputer and OneHotEncoder to do preprocessing of the 
@@ -116,7 +113,7 @@ The projects can be viewed by clicking on the file with extension "*.ipynb" (Jup
     To view the project click on "Project0_KaggleProject_ExploreData.ipynb"
     or "Project1_PreprocessingAndRegression.ipynb" or "Project2_RegressionLinearPoly.ipynb"
     
-### (9) WebScrappingBS4  
+### (10) WebScrappingBS4  
      We use python library called "BeautifulSoup" to do webscrapping. 
      In the end we use seaborn library to make a bar graph.
      To view the project click on "WebScrappingBS4.ipynb"
