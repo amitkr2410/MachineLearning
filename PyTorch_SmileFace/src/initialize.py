@@ -5,6 +5,7 @@ from dataclasses import dataclass
 from src.parameters import AllParameters
 
 def Main(filename : Path) -> AllParameters:
+    print('######### Start initializing parameters ##### ')
     UpdatedParameters = AllParameters()
     print(UpdatedParameters.__dict__.keys())
     print(UpdatedParameters.__dict__.values())
@@ -26,6 +27,8 @@ def Main(filename : Path) -> AllParameters:
 
     #setattr(UpdatedParameters, '', )
     print(UpdatedParameters.__dict__.values())
+
+    print('######### Done initializing parameters ##### ')
 
     return UpdatedParameters
 
