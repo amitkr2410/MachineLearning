@@ -1,0 +1,71 @@
+
+batch_size : 100
+
+num_epochs : 20
+
+(A) model_name : cnn_4layers_custom
+
+	(1) Run1: cnn_4layers_results
+		learning_rate : 0.001
+		weight_decay : 0.2
+
+		train_accuracy : 0.78
+		test_val_loss : 0.00698
+		test_accuracy : 0.526
+
+	(2) Run2: cnn_4layers_results_Run2
+		learning_rate : 0.01
+		weight_decay : 0.2
+
+		train_accuracy : 0.73625
+		test_val_loss : 0.0064
+		test_accuracy : 0.673
+
+	(3) Run3:  cnn_4layers_results_Run3
+		learning_rate : 0.1
+		weight_decay : 0.2
+
+		train_accuracy : 0.498
+		test_val_loss : 0.0069
+		test_accuracy : 0.50
+
+
+	(4) Run11: cnn_4layers_results_Run11: 
+		learning_rate : 0.001
+		weight_decay : 0.02
+
+		train_accuracy : 0.85
+		test_val_loss : 0.0055
+		test_accuracy : 0.76
+
+	(5) Run12: cnn_4layers_results_Run12
+		learning_rate : 0.001
+		weight_decay : 0.002
+
+		train_accuracy : 0.92
+		test_val_loss : 0.00348
+		test_accuracy : 0.85
+
+
+(B) model_name : vgg16_pretrained_false
+	(1) Run50: vgg16_pretrained_false_Run50
+		learning_rate : 0.001
+		weight_decay : 0.002
+
+		train_accuracy : 0.79
+		test_val_loss : 0.00964
+		test_accuracy : 0.718
+
+	(2) Run51: vgg16_pretrained_false_Run51
+		learning_rate : 0.01
+		weight_decay : 0.002
+
+		train_accuracy : 0.539
+		test_val_loss : 0.0153
+		test_accuracy : 0.68
+
+
+
+
+
+
