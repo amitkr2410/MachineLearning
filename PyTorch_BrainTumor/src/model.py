@@ -1,6 +1,7 @@
 import torchvision
 import torch
 import torch.nn as nn
+import src.model_attention as model_attention
 
 def get_model(model_parameters) -> nn.Module:
     model_name = model_parameters.model_name
@@ -17,6 +18,9 @@ def get_model(model_parameters) -> nn.Module:
         
     if model_name == 'cnn_4layers_custom':
         model = get_cnn_4layers_custom(num_classes)
+        
+    if model_name == 'cnn_with_attention' or model_name == 'only_attention' :
+        model = model_attention.get_model_with_attention(model_name, num_classes)
 
     return model
 

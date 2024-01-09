@@ -1,9 +1,14 @@
 
-batch_size : 100
-
+batch_size : 50
 num_epochs : 20
 
 (A) model_name : cnn_4layers_custom
+	(0) Run0: cnn_4layers_results_Run0
+		learning_rate : 0.01
+		weight_decay : 0.002
+
+		train_accuracy : 0.8270833333333334
+		test_accuracy : 0.805
 
 	(1) Run1: cnn_4layers_results
 		learning_rate : 0.001
@@ -46,9 +51,51 @@ num_epochs : 20
 		test_val_loss : 0.00348
 		test_accuracy : 0.85
 
+	(6) Run21: cnn_4layers_results_Run21
+		learning_rate : 0.0001
+		weight_decay : 0.002
+
+		train_accuracy : 0.9395833333333331
+		test_val_loss : 0.003219242406388124
+		test_accuracy : 0.9516666666666667
+
+	(7) Run22: cnn_4layers_results_Run22
+		learning_rate : 0.0001
+		weight_decay : 0.0002
+
+		train_accuracy : 0.939
+		test_val_loss : 0.0035
+		test_accuracy : 0.945
+
+	(8) Run31: cnn_4layers_results_Run31
+		learning_rate : 1e-05
+		weight_decay : 0.002
+
+		train_accuracy : 0.876
+		test_val_loss : 0.0061
+		test_accuracy : 0.878
+
 
 (B) model_name : vgg16_pretrained_false
-	(1) Run50: vgg16_pretrained_false_Run50
+
+	(0) Run48: vgg16_pretrained_false_Run48
+		learning_rate : 1e-05
+		weight_decay : 0.002
+
+		train_accuracy : 0.95375
+		test_val_loss : 0.00416
+		test_accuracy : 0.9216
+
+	(1) Run49: vgg16_pretrained_false_Run49
+		learning_rate : 0.0001
+		weight_decay : 0.002
+
+		train_accuracy : 0.9741666666666665
+		test_val_loss : 0.00146123293787241
+		test_accuracy : 0.9716666666666666
+
+
+	(2) Run50: vgg16_pretrained_false_Run50
 		learning_rate : 0.001
 		weight_decay : 0.002
 
@@ -56,7 +103,7 @@ num_epochs : 20
 		test_val_loss : 0.00964
 		test_accuracy : 0.718
 
-	(2) Run51: vgg16_pretrained_false_Run51
+	(3) Run51: vgg16_pretrained_false_Run51
 		learning_rate : 0.01
 		weight_decay : 0.002
 
@@ -65,7 +112,71 @@ num_epochs : 20
 		test_accuracy : 0.68
 
 
+(C) model_name : cnn_with_attention
+
+	(100) Run100: cnn_with_attention_Run100
+		learning_rate : 0.00001
+		weight_decay : 0.002
+
+		train_accuracy : 0.9108333333333332
+		test_val_loss : 0.004862453117966651
+		test_accuracy : 0.9149999999999999
+
+    (101) Run101: 
+		learning_rate : 0.0001
+		weight_decay : 0.002
+
+		train_accuracy : 0.965
+		test_val_loss : 0.002130848579108715
+		test_accuracy : 0.9583333333333335 
+
+	(102) Run102: cnn_with_attention_Run102
+		
+		learning_rate : 0.001
+		weight_decay : 0.002
+
+		train_accuracy : 0.9229166666666665
+		test_val_loss : 0.0031912598696847753
+		test_accuracy : 0.9466666666666669
+
+	(103) Run103: cnn_with_attention_Run103
+
+		learning_rate : 0.01
+		weight_decay : 0.002
+		train_accuracy : 0.6325
+		test_val_loss : 0.12575136502583825
+		test_accuracy : 0.6183333333333333
 
 
+(D) model_name : only_attention
+	(150) Run150:  only_attention_Run150
+		learning_rate : 1e-05
+		weight_decay : 0.002
 
+		train_accuracy : 0.8579166666666668
+		test_val_loss : 0.005929590513308843
+		test_accuracy : 0.8700000000000001
 
+	(151) Run151:  only_attention_Run151		
+		learning_rate : 0.0001
+		weight_decay : 0.002
+
+		train_accuracy : 0.9525000000000001
+		test_val_loss : 0.00295346025377512
+		test_accuracy : 0.9516666666666667
+
+	(152) Run152:  only_attention_Run152		
+		learning_rate : 0.001
+		weight_decay : 0.002
+
+		train_accuracy : 0.8033333333333336
+		test_val_loss : 0.029177577992280324
+		test_accuracy : 0.7333333333333333
+
+	(153) Run153:  only_attention_Run153		
+		learning_rate : 0.01
+		weight_decay : 0.002
+
+		train_accuracy : 0.6579166666666666
+		test_val_loss : 0.22765719811121624
+		test_accuracy : 0.6583333333333332

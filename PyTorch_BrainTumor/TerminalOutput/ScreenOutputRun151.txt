@@ -1,0 +1,102 @@
+/content/drive/MyDrive/PyTorch_BrainTumor/params.yaml
+
+
+######### Start initializing parameters ##### 
+dict_keys(['parent_dir', 'model_name', 'num_classes', 'seed', 'test_size', 'train_folder', 'test_folder', 'predict_folder', 'learning_rate', 'weight_decay', 'batch_size', 'num_epochs', 'save_model_flag', 'save_model_dir', 'save_model_filename', 'save_parameters_file', 'train_accuracy', 'test_val_loss', 'test_accuracy'])
+dict_values([PosixPath('.'), 'cnn_4layers_custom', 2, 1, 0.2, PosixPath('data/train'), PosixPath('data/test'), PosixPath('data/predict'), 0.002, 0.2, 100, 2, 'yes', 'final_model', 'cnn_4layers_custom.pth', 'cnn_4layers_results', 0.0, 0.0, 0.0])
+model_name
+save_model_filename
+save_parameters_file
+seed
+test_size
+learning_rate
+weight_decay
+num_epochs
+batch_size
+Parent_DIR is =  /content/drive/MyDrive/PyTorch_BrainTumor
+dict_values([PosixPath('/content/drive/MyDrive/PyTorch_BrainTumor'), 'only_attention', 2, 4, 0.2, PosixPath('/content/drive/MyDrive/PyTorch_BrainTumor/data/train'), PosixPath('/content/drive/MyDrive/PyTorch_BrainTumor/data/test'), PosixPath('/content/drive/MyDrive/PyTorch_BrainTumor/data/predict'), 0.0001, 0.002, 50, 20, 'yes', 'final_model', '/content/drive/MyDrive/PyTorch_BrainTumor/final_model/only_attention_Run151.pth', 'only_attention_Run151', 0.0, 0.0, 0.0])
+######### Done initializing parameters ##### 
+
+
+######### Start data download step ##### 
+######### End of the data download step ##### 
+######### Start of data loader creation step ##### 
+######### End of data loader creation step ##### 
+######### Start of training step ##### 
+Device is  cuda
+ You have called model with basic vision transformer: 
+basic_vision_transformer(
+  (adaptivepool): AdaptiveAvgPool2d(output_size=(200, 200))
+  (patch_embedding_layer): Linear(in_features=300, out_features=512, bias=True)
+  (sa): SelfAttention(
+    (W_q): Linear(in_features=512, out_features=512, bias=True)
+    (W_k): Linear(in_features=512, out_features=512, bias=True)
+    (W_v): Linear(in_features=512, out_features=512, bias=True)
+    (W_o): Linear(in_features=512, out_features=512, bias=True)
+  )
+  (fc): Sequential(
+    (0): Linear(in_features=204800, out_features=2, bias=True)
+  )
+)
+Size of train_loader= 48
+End of epoch:  0 / 20 , training accuracy= 0.6658333333333333  , val loss= 0.010573263615369796  , val accuracy= 0.7366666666666667
+End of epoch:  1 / 20 , training accuracy= 0.7474999999999999  , val loss= 0.00914113129178683  , val accuracy= 0.8033333333333332
+End of epoch:  2 / 20 , training accuracy= 0.7979166666666666  , val loss= 0.0077303889393806465  , val accuracy= 0.8116666666666666
+End of epoch:  3 / 20 , training accuracy= 0.8112500000000001  , val loss= 0.007344988361001014  , val accuracy= 0.8283333333333333
+End of epoch:  4 / 20 , training accuracy= 0.8241666666666667  , val loss= 0.006339982251326243  , val accuracy= 0.8383333333333334
+End of epoch:  5 / 20 , training accuracy= 0.8533333333333336  , val loss= 0.005514301533500353  , val accuracy= 0.8700000000000001
+End of epoch:  6 / 20 , training accuracy= 0.8670833333333335  , val loss= 0.00492430622378985  , val accuracy= 0.9049999999999999
+End of epoch:  7 / 20 , training accuracy= 0.8700000000000001  , val loss= 0.004848418186108272  , val accuracy= 0.915
+End of epoch:  8 / 20 , training accuracy= 0.8866666666666664  , val loss= 0.004036718830466271  , val accuracy= 0.9216666666666667
+End of epoch:  9 / 20 , training accuracy= 0.9025000000000003  , val loss= 0.00451184277733167  , val accuracy= 0.9233333333333335
+End of epoch:  10 / 20 , training accuracy= 0.9079166666666669  , val loss= 0.003750928690036138  , val accuracy= 0.9333333333333332
+End of epoch:  11 / 20 , training accuracy= 0.9025  , val loss= 0.004125567836066087  , val accuracy= 0.915
+End of epoch:  12 / 20 , training accuracy= 0.9074999999999999  , val loss= 0.005178746109207471  , val accuracy= 0.9199999999999999
+End of epoch:  13 / 20 , training accuracy= 0.9283333333333333  , val loss= 0.003472677717606226  , val accuracy= 0.9433333333333334
+End of epoch:  14 / 20 , training accuracy= 0.9329166666666672  , val loss= 0.0034001480787992475  , val accuracy= 0.9433333333333334
+End of epoch:  15 / 20 , training accuracy= 0.9225000000000002  , val loss= 0.004557394174238046  , val accuracy= 0.9166666666666665
+End of epoch:  16 / 20 , training accuracy= 0.9295833333333334  , val loss= 0.0038493368153770763  , val accuracy= 0.9266666666666667
+End of epoch:  17 / 20 , training accuracy= 0.9249999999999997  , val loss= 0.0034166959517945837  , val accuracy= 0.9483333333333334
+End of epoch:  18 / 20 , training accuracy= 0.9358333333333338  , val loss= 0.002780106241504351  , val accuracy= 0.9549999999999997
+End of epoch:  19 / 20 , training accuracy= 0.9525000000000001  , val loss= 0.00295346025377512  , val accuracy= 0.9516666666666667
+: The validation loss =  0.00295346025377512 , accuracy= 0.9516666666666667
+Saving the model into the file: /content/drive/MyDrive/PyTorch_BrainTumor/final_model/only_attention_Run151.pth
+######### End of training step ##### 
+Amit: parent_dir
+parent_dir : /content/drive/MyDrive/PyTorch_BrainTumor
+
+model_name : only_attention
+
+num_classes : 2
+
+seed : 4
+
+test_size : 0.2
+
+train_folder : /content/drive/MyDrive/PyTorch_BrainTumor/data/train
+
+test_folder : /content/drive/MyDrive/PyTorch_BrainTumor/data/test
+
+predict_folder : /content/drive/MyDrive/PyTorch_BrainTumor/data/predict
+
+learning_rate : 0.0001
+
+weight_decay : 0.002
+
+batch_size : 50
+
+num_epochs : 20
+
+save_model_flag : yes
+
+save_model_dir : final_model
+
+save_model_filename : /content/drive/MyDrive/PyTorch_BrainTumor/final_model/only_attention_Run151.pth
+
+save_parameters_file : only_attention_Run151
+
+train_accuracy : 0.9525000000000001
+
+test_val_loss : 0.00295346025377512
+
+test_accuracy : 0.9516666666666667

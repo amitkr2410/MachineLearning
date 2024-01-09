@@ -1,0 +1,20 @@
+1. LearningRateVsAccuracy.py
+   *Plot of training accuracy and test accuracy vs learning rate
+
+   VGG16:	Run48, Run49, Run50, Run51
+   4-CNN: 	Run31, Run21, Run12,
+LearningRate:   1e-5,  1e-4,  1e-3,  1e-2
+Weight Decay: 0.002
+
+2. Contour plot1:
+   *2D Plot of learning rate, weight decay, training accuracy for VGG16 and for 4-layer CNN
+   for VGG16: Run48, Run49, Run50, Run51
+   for 4-layers CNN: Run1, Run2, Run3, Run11, Run12, Run21, Run22, Run31
+   
+3. Contour plot2:
+   *2D Plot of learning rate, weight decay, test accuracy for VGG16 and for 4-layer CNN
+   for VGG16: Run48, Run49, Run50, Run51
+   for 4-layers	CNN: Run1, Run2, Run3, Run11, Run12, Run21, Run22, Run31
+
+
+

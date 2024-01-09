@@ -8,7 +8,8 @@ class AllParameters:
     parent_dir: Path = Path('')
     #Parameters
     model_name: str="cnn_4layers_custom" #[vgg16_pretrained_true, vgg16_pretrained_false,
-                                            #  ,vgg16_custom, cnn_4layers_custom]
+                                            #  ,vgg16_custom, cnn_4layers_custom
+                                            #, cnn_with_attention, only_attention, ]
     num_classes: int = 2                     #2 (brain-tumor), 7(FaceSmile), 102(Flowers)
     #device_name = 'cpu' # 'cuda' or 'cpu'
     #PreprocessParameters

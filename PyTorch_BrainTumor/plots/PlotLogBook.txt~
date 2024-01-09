@@ -1,0 +1,5 @@
+1. LearningRateVsAccuracy.py
+
+   VGG16:	Run48, Run49, Run50, Run51
+   4-CNN: 	Run31, Run21, Run12,
+LearningRate:   1e-5,  1e-4,  1e-3, 1e-2

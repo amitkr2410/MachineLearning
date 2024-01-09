@@ -25,8 +25,8 @@ def custom_validation(model, data_loader, criterion, device):
 
         #probabilities = torch.exp(output) #If nn.NLLLoss is used for loss function
         #print('i:',i , '/', len(data_loader))
-        if i==30:
-                break
+        #if i==0:
+        #        break
     torch.set_grad_enabled(True) #Turn ON the gradient calculation
     return val_loss/(i+1), accuracy/(i+1)
     #return val_loss/len(data_loader), accuracy/len(data_loader)
@@ -62,7 +62,7 @@ def Main(dataclass_params, train_loader, test_loader):
     train_accuracy=0
 
     for epoch in range(num_epochs):
-        train_accuracy=0    
+        train_accuracy=0
         model.train() #Put the model in the training phase, activates dropout, batch-normalization layers
         for i, (images, labels) in enumerate(train_loader):  
             # Move tensors to the configured device
@@ -73,9 +73,10 @@ def Main(dataclass_params, train_loader, test_loader):
             #print('i=', i, type(images), len(images), len(labels) ,labels )
             
             outputs = model(images)
+            #print(type(outputs), outputs.size(), len(outputs))
             outputs_class = torch.argmax(outputs, dim=1)
             #print(type(outputs), len(outputs), ' pred output=', outputs, ' \n pred class=', torch.argmax(outputs, dim=1) )
-            #print('i=', i, type(labels), len(labels) ,' ground_truth=' , labels)
+            #print('i=', i, labels.size(), type(labels), len(labels) ,' ground_truth=' , labels)
 
             loss = criterion(outputs, labels)
             
@@ -86,11 +87,13 @@ def Main(dataclass_params, train_loader, test_loader):
             
             #print('Batch: ',i,'/',total_step)
             train_accuracy += (outputs_class == labels).float().sum().item()/len(labels)
-            #if i==30:
+            #if i==1:
             #    break
             
         train_accuracy = train_accuracy/(i+1)
-        print('End of epoch: ', epoch,'/',num_epochs, ', training accuracy=', train_accuracy)    
+        val_loss, accuracy = custom_validation(model, test_loader, criterion, device)
+        print('End of epoch: ', epoch,'/',num_epochs, ', training accuracy=', train_accuracy, 
+              ' , val loss=', val_loss, ' , val accuracy=', accuracy )    
         
     val_loss, accuracy = custom_validation(model, test_loader, criterion, device)
     dataclass_params.train_accuracy = train_accuracy
