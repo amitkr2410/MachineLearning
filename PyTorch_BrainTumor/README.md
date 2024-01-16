@@ -2,7 +2,7 @@
 
 ### Goal: 
 
-The goal of this project is to build CT scan tumor detection app using **self-attention module** and compare the performance with traditional **VGG16** architecture. We deploy the app on the **Google Cloud Run**, **Google Kubernetes Engine** and **AWS platform** to explore technical challenges involved in deploying **PyTorch** model on **AWS** and **Google Cloud** servers.
+The goal of this project is to build a CT scan tumor detection app using a **self-attention module** and compare the performance with traditional **VGG16** architecture. We deploy the app on the **Google Cloud Run**, **Google Kubernetes Engine** and **AWS platform** to explore technical challenges involved in deploying **PyTorch** model on **AWS** and **Google Cloud** servers.
 
 
 ### 1. How to run the code in the terminal:
@@ -27,7 +27,7 @@ d. execute the following command on python cell:
  Note the exclamation **"!"** symbol in the command above, it is very important -- It tells the compiler that it's a bash/shell command.
  Also, I assume that we uploaded  **"PyTorch_BrainTumor"** directory in **"MyDrive"** of **Google Drive**.
 
-### 3. Pre-requesites:
+### 3. Pre-requisites:
 The **PyTorch** library heavily rely on **object-oriented programming** concepts such as **class**, **object** and **inheritance**. Make sure you have basic understanding of these conecpts.
     
 ### 4.  File Descriptions:  
@@ -96,7 +96,7 @@ We present the model accuracy as a function of hyperparameter "Learning Rate" fo
 ![alt text](plots/figure_learning_rate_VGG16.png) 
 
 In the plot below, we present the training and validation accuracy as a function of epoch. For the given data set, we observe a saturation in the model accuracy as we progress to higher values in the epoch.
-Due to limited computational resources, we have computed the performance of the model upto epoch=20. The model architecture of VGG16 is significantly deeper and   performs with accuracy =97%, slightly higher compared to  basic vision transformer (95%) accuracy.
+Due to limited computational resources, we have computed the performance of the model up to epoch=20. The model architecture of VGG16 is significantly deeper and   performs with accuracy =97%, slightly higher compared to  basic vision transformer (95%) accuracy.
 
 ![alt text](plots/figure_epochVsAccuracy_VGG16.png)
 
@@ -146,7 +146,9 @@ To compare the predicted class probability with the ground truth labels, we use 
 
 
 ### 13. Deployment:
-We present full instructions on how to deploy the final model on Google and AWS cloud here:
+We present full instructions on how to deploy the final model on Google and AWS cloud here: 
+
+		https://github.com/amitkr2410/MachineLearning-Deployment
 
 #### Host on Google Cloud Run:
 
@@ -163,10 +165,9 @@ We present full instructions on how to deploy the final model on Google and AWS 
 		
 
 ### 14. Conclusion: 
-The self-attention model with positional encoding gives excellent results and performs very similar to the VGG16 model with an accuracy in range 95-97%. Applying self-attention module to image data allows the model to capture long-range dependencies between different image regions -- This helps in improving the performance and achieving similar accuracy of the model. The model VGG16 is know to capture local features and spatial hierachies. 
+The self-attention model with positional encoding gives excellent results and performs very similar to the VGG16 model with an accuracy in the range of 95–97%. Applying a self-attention module to image data allows the model to capture long-range dependencies between different image regions - This helps in improving the performance and achieving similar accuracy of the model. The model VGG16 is known to capture local features and spatial hierarchies.
 
-In our calculation, we find the model file size for VGG16 model to be ~500MB, whereas for self-attention based model it was ~5 MB. This demonstrate the fact that the model size for basic vision transformer model is 100 times smaller than the VGG16 model, mainly due to less number of training parameters. The computational resource needed to train and deploy is smaller for basic vision transformer compared to VGG16 model.
-
+In our calculation, we find the model file size for the VGG16 model to be ~500MB, whereas, for the self-attention based model, it was ~5 MB. It indicates that the model size for the self-attention-based model is 100 times smaller than the VGG16 model, mainly due to the smaller number of training parameters. The computational resource needed to train and deploy is smaller for the attention-based model compared to the VGG16 model.
  
 
 
