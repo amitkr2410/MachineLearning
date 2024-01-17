@@ -1,6 +1,6 @@
 ## Here, we apply Machine learning algorithms to build predictive model and build end-to-end application:
 
-The goal of repositories **[amitkr2410/MachineLearning](https://github.com/amitkr2410/MachineLearning)** and **[amitkr2410/MachineLearning-Deployment](https://github.com/amitkr2410/MachineLearning-Deployment)** is to explore all stages from preparation to deployment of machine learning models and build end-to-end applications. In this repository, we present methods to deploy machine learning models on **Google Cloud** and **AWS servers** using **flask**, **docker** and **html**.
+The goal of repositories **[amitkr2410/MachineLearning](https://github.com/amitkr2410/MachineLearning)** and **[amitkr2410/MachineLearning-Deployment](https://github.com/amitkr2410/MachineLearning-Deployment)** is to explore all stages from preparation to deployment of machine learning models and build end-to-end applications. In this repository, we present machine learning models for numerical data, NLP and computer vision tasks  using **Sci-Kit Learn** and **PyTorch** library. 
 
 ### The final projects deployed on cloud servers (may take 2 mins to load website):
 
