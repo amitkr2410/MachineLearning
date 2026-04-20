@@ -8,7 +8,7 @@
     'ENGINEERING', 'ACCOUNTANT', 'CONSTRUCTION', 'PUBLIC-RELATIONS', 'BANKING',
     'ARTS', 'AVIATION']
     
-    Then, the resume data is saved in pdf format to create a catalog. 
+    Then, the resume data is saved in PDF format to create a catalog. 
     The generated pdf are converted into text which are then analyzed using NLP techniques
     and used to build a machine learning model for classification.    
     The projects can be viewed by clicking on the file with extension "*.ipynb" (JupyterNotebook)

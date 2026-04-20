@@ -1,4 +1,4 @@
-## Classify cancer cell samples as benign (non-cancerous) or malignant (cancerous) using Support vector machine (SVM) algorithm
+## Classify cancer cell samples as benign (non-cancerous) or malignant (cancerous) using Support Vector Machine (SVM) algorithm
 ### Goal:
 Our goal is to build a SVM model by training the data for human cells into benign or malignant state. The Data is from http://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Original%29.  The formatted data was downloaded from here https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/ML0101ENv3/labs/cell_samples.csv 
 
